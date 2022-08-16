@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OkinoKamaliLeiba>
+  
+  <profile>
+    <name>
+      Okino Kamali Leiba
+    </name>
+    <age>
+      38
+    </age>
+    <gender>
+      Male
+    </gender>
+    <ethnicity>
+      Jamaican
+    </ethnicity>
+    <race>
+      African American 
+    </race>
+    <nationalorgin>
+      Jamaican 
+    </nationalorgin>
+  </profile>
+  
+</OkinoKamaliLeiba>

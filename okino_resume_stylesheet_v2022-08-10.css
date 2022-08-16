@@ -1,0 +1,110 @@
+﻿:root {
+    --sidebar-width: 310px
+}
+
+
+/*style the main content*/
+main {
+    margin-left: var(--sidebar-width); /*same as the width of the sidenav*/
+    float: none;
+    padding: 0px 50% 0px 10px;
+}
+
+
+.viewport{
+    padding: inherit;
+    
+} /*may be unnecessary*/
+
+/*style the body represents most outer limit*/
+body {
+    background-color: #DEEBE9;
+    font-family: Times New Roman, Times, serif;
+    position: absolute;
+    
+    /*image and body bransition*/
+    transition: .5s ease-in;
+    transition-delay: 5s;
+    top: .5%;
+    left: .5%;
+    transform: translate3d(-50%,-50%,-50);
+    /*text*/
+    overflow: scroll;
+    word-wrap: break-word;
+}
+
+p {
+    word-spacing: normal;
+    line-height: 5px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    display: flex;
+    
+}
+
+#profile-image{
+    position: center;
+    padding: 0px 0px 0px 4px;
+    
+}
+
+#navbar {
+    background-color: #333;
+    position: fixed;
+    top: -50px; /*hide the navbar 50px outside of the top view*/
+    width: 100%;
+    transition: top 0.3s; /*transition effect when sliding down and up*/
+}
+
+
+
+aside {
+    height: 100%;
+    width: var(--sidebar-width); /*width of the sidebar-padding*/
+    position: fixed;
+    z-index: 1; /*stay on top in relation to other box*/
+    top: 0; /*stay at the top */
+    left: 0;
+    background-color: #C6D0CE;
+    overflow-x: scroll; /*disable horizontal scroll*/
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+footer {
+    height: 100px;
+    width: var(--sidebar-width); /*width of the sidebar-padding*/
+    position: inherit;
+    z-index: 2; /*stay on bottom*/
+    bottom: 0; /*stay at the bottom */
+    left: 0;
+    background-color: #8B9493;
+   
+}
+
+table tr th {
+    border: black;
+}
+
+#header-name{
+    text-align: center;
+    
+}
+
+th.table-align-left {
+    text-align: left
+}
+
+th.table-align-center {
+    text-align: center
+}
+
+
+th.table-align-right {
+    text-align:right
+}
+
+
+
+/*Monochrome Color Scheme Choices: 9CA7A5 8B9493 658C87 E6EFED EBEFEE */
+/*Monochrome Color Scheme Choices (lighter/brighter:DEEBE9	C6D0CE	90C5BE	F3FBFA	F7FBFB */
