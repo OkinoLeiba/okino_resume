@@ -1,0 +1,146 @@
+﻿/*
+    CSS v2021.12.28
+*/
+
+:root {
+    --primary: #C6D0CE;
+    --secondary: #EBEFEE;
+    --tertary: #F3FBFA;
+    --success: green;
+    --error: red;
+    --warning: yellow;
+    --danger: dark red;
+    --info: blue;
+    --light: white;
+    --dark: black;
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --font-family-san-serif: -apple-system, BlinkMacSystemFont, "Times New Roman", Times, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+ /*
+     Websafe Fonts:
+Arial (sans-serif)
+Verdana (sans-serif)
+Helvetica (sans-serif)
+Tahoma (sans-serif)
+Trebuchet MS (sans-serif)
+Times New Roman (serif)
+Georgia (serif)
+Garamond (serif)
+Courier New (monospace)
+Brush Script MT (cursive)
+*/
+}
+
+
+
+*, ::before, ::after{
+    box-sizing: padding-box;
+}
+
+::selection{
+    background-color: powderblue;
+}
+
+html {
+    background-color: orange;
+    font-family: sans-serif;
+    line-height: 1.15;
+    padding: 10px, 13px, 8px, 10px;
+    margin: auto;
+    /*Image and Body Transition*/
+    transition: .5s ease-in;
+    transition-delay: 5s;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%,-50%,-50);
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    
+}
+
+
+
+h1, h2, h3, h3, h4, h5 {
+    border-style: none;
+    padding: initial;
+    margin: auto
+}
+
+h7 {
+    border-style: none;
+    padding: initial;
+    margin: auto;
+}
+
+h8 {
+    border-style: none;
+    padding: initial;
+    margin: auto;
+}
+
+
+table {
+    border-style: groove;
+    padding: 3px, 6px, 1px, 3px;
+    margin: auto;
+}
+
+tr {
+    border-style:inherit;
+}
+
+td {
+    border-style: inherit;
+}
+
+p {
+    border-style: none;
+    margin: auto;
+}
+
+ul {
+    border-style: inherit;
+    list-style: disc;
+    /*list-style-type: katakana;*/
+    list-style-position: outside;
+    margin-left: 5px; /*solid black*/
+}
+
+/*nav-index*/
+[tabindex='-1']:focus{
+    outline: 0 !important;
+}
+
+a:link {
+    color: slategray;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: lightseagreen;
+    background-color: transparent;
+    text-decoration: underline;
+    cursor: default;
+}
+
+a:active {
+    color: skyblue;
+    background-color: transparent;
+    text-decoration: underline;
+}
+/* Monochrome Color Scheme Choices: 9CA7A5	8B9493	658C87	E6EFED	EBEFEE */
+/*Monochrome Color Scheme Choices (lighter/brighter:DEEBE9	C6D0CE	90C5BE	F3FBFA	F7FBFB */

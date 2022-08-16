@@ -1,62 +1,23 @@
-﻿body 
-{
-    background-color: black;
-    display: flex;
-    font-family: Times New Roman, Times, serif;
-    padding: 50px;
-    /*Image and Body Transition*/
-    transition: .5s ease-in;
-    transition-delay: 5s;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate3d(-50%,-50%,-50);
-    
-
+﻿
+main body header #resume-header {
+    text-align: center;
 }
 
-main body header #header-name 
-{
- text-align: center;
- text-decoration:underline;
-
-
+main body section.education text-align-left {
+    text-align: left;
 }
 
-main body header #header-table
-{
-    
+main body section.education text-align-right {
+    text-align: right;
 }
-main body #profile-image{
+
+main body #profile-image {
     position: relative;
     opacity: 0.5;
-    display:block;
+    display: block;
     width: 200px;
     transition: .5s ease-out;
     backface-visibility: hidden;
-
-        
-}
-
-h1 {
-    text-align: center;
-    font-size: 150%;
-}
-
-h2 {
-}
-
-h3 {
-}
-
-p {
-}
-
-ul {
-    list-style: disc;
-    /*list-style-type: katakana;*/
-    list-style-position: outside;
-    margin-left: 5px; /*solid black*/
 }
 
 .bold-education {
@@ -65,32 +26,4 @@ ul {
 .sections {
     text-align: left;
     text-decoration: none;
-        
 }
-
-a:link {
-    color: slategray;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-a:visited {
-    color: black;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-a:hover {
-    color: lightseagreen;
-    background-color: transparent;
-    text-decoration: underline;
-    cursor: default;
-}
-
-a:active {
-    color: skyblue;
-    background-color: transparent;
-    text-decoration: underline;
-}
-/* Monochrome Color Scheme Choices: 9CA7A5	8B9493	658C87	E6EFED	EBEFEE */
-/*Monochrome Color Scheme Choices (lighter/brighter:DEEBE9	C6D0CE	90C5BE	F3FBFA	F7FBFB */
