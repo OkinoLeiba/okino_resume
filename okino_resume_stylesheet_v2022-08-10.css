@@ -1,50 +1,68 @@
 ﻿:root {
+    --primary: #DEEBE9;
+    --secondary: #EBEFEE;
+    --tertary: #658C87;
+    --success: green;
+    --error: red;
+    --warning: yellow;
+    --danger: dark red;
+    --info: blue;
+    --light: white;
+    --dark: black;
+    --font-family-san-serif: -apple-system, BlinkMacSystemFont, "Times New Roman", Times, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --sidebar-width: 310px
 }
 
 
 /*style the main content*/
-main {
+    main {
     margin-left: var(--sidebar-width); /*same as the width of the sidenav*/
     float: none;
-    padding: 0px 50% 0px 10px;
+    padding: 0px 50px 0px 10px;
 }
 
 
 .viewport{
     padding: inherit;
     
+    
 } /*may be unnecessary*/
 
 /*style the body represents most outer limit*/
 body {
     background-color: #DEEBE9;
-    font-family: Times New Roman, Times, serif;
+    font-family: var(--font-family-san-serif);
     position: absolute;
-    
-    /*image and body bransition*/
+    margin: 0px 500px 0px 0px;
+    padding-left: 10px;
+    /*image and body transition*/
     transition: .5s ease-in;
     transition-delay: 5s;
     top: .5%;
     left: .5%;
     transform: translate3d(-50%,-50%,-50);
-    /*text*/
-    overflow: scroll;
-    word-wrap: break-word;
+    
+}
+
+.section {
+    max-width: 80%;
 }
 
 p {
     word-spacing: normal;
     line-height: 5px;
+    /*text overflow*/
     white-space: nowrap;
     text-overflow: ellipsis;
     display: flex;
+    overflow: visible;
+    word-wrap: break-word;
+    
     
 }
 
-#profile-image{
-    position: center;
-    padding: 0px 0px 0px 4px;
+#profile-image{    
+    margin: 0px 50px 0px;
     
 }
 
@@ -65,19 +83,19 @@ aside {
     z-index: 1; /*stay on top in relation to other box*/
     top: 0; /*stay at the top */
     left: 0;
-    background-color: #C6D0CE;
+    background-color: darkgray;
     overflow-x: scroll; /*disable horizontal scroll*/
     padding-top: 20px;
     padding-right: 20px;
+    background-size: contain; /*style profile-image*/
 }
 
 footer {
     height: 100px;
-    width: var(--sidebar-width); /*width of the sidebar-padding*/
     position: inherit;
-    z-index: 2; /*stay on bottom*/
+    z-index: 1; /*stay on bottom*/
     bottom: 0; /*stay at the bottom */
-    left: 0;
+    right: 0;
     background-color: #8B9493;
    
 }
@@ -91,6 +109,8 @@ table tr th {
     
 }
 
+
+/*TODO: Repair not rendering correctly*/
 th.table-align-left {
     text-align: left
 }
@@ -104,7 +124,80 @@ th.table-align-right {
     text-align:right
 }
 
+a:link {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: green;
+    background-color: transparent;
+    text-decoration: underline;
 
 
-/*Monochrome Color Scheme Choices: 9CA7A5 8B9493 658C87 E6EFED EBEFEE */
-/*Monochrome Color Scheme Choices (lighter/brighter:DEEBE9	C6D0CE	90C5BE	F3FBFA	F7FBFB */
+    /*extra small devices phones, 600px and down*/
+    @media only screen and (max-width: 600px) {
+        body {
+          max-width: 100px;
+
+        }
+    }
+    /*small devices portrait tablets and large phones, 600px and up*/
+    @media only screen and (min-width: 600px) {
+        body {
+           
+        }
+    }
+    /*medium devices landscape tablets, 768px and up*/
+    @media only screen and (width <= 768px) {
+        body {
+            
+        }
+    }
+    /*large devices laptops/desktops, 992px and up*/
+    @media only screen and (min-width: 992px) {
+        body {
+            
+        }
+    }
+    /*extra large devices large laptops and desktops, 1200px and up */
+    @media only screen and (min-width: 1200px) {
+        body {
+            
+        }
+    }
+
+    @media only screen and (display-mode: minimal-ui){
+
+    }
+
+    @media only screen and (overflow-block: optional-paging){
+
+    }
+
+    @media only screen and (orientation: landscape){
+
+    }
+
+    @media only screen and (environment-blending: additive){
+        body{
+            opacity: 0.6;
+        }
+        
+    }
+
+    /*Monochrome Color Scheme Choices: 9CA7A5 8B9493 658C87 E6EFED EBEFEE */
+    /*Monochrome Color Scheme Choices (lighter/brighter:DEEBE9	C6D0CE	90C5BE	F3FBFA	F7FBFB */
